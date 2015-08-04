@@ -1,0 +1,20 @@
+// Each module will be defined as desktop by default
+// and each media query breakpoint will be listed in
+// decsending order, with common breakpoints defined
+// in the _variables.less file.
+
+.navigation {
+  display: block;
+}
+
+@media (max-width: @tablet-breakpoint){
+  .navigation {
+    display: inline-block;
+  }
+}
+
+@media (max-width: @mobile-breakpoint){
+  .navigation {
+    display: inline;
+  }
+}
